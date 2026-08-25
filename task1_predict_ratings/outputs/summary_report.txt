@@ -1,0 +1,33 @@
+
+TASK 1: PREDICT RESTAURANT RATINGS - SUMMARY
+==============================================
+
+Dataset: 7403 restaurants (after removing 'Not rated' entries), 14 features
+
+MODEL PERFORMANCE:
+                      MSE    RMSE     MAE      R2
+Linear Regression  0.1828  0.4275  0.3379  0.4091
+Decision Tree      0.1344  0.3666  0.2704  0.5654
+Random Forest      0.1110  0.3332  0.2465  0.6411
+
+BEST MODEL: Random Forest
+  R-squared : 0.6411
+  RMSE      : 0.3332
+  MAE       : 0.2465
+
+TOP 5 MOST INFLUENTIAL FEATURES:
+Votes                   0.5501
+Longitude               0.1186
+Latitude                0.1023
+Primary Cuisine_enc     0.0613
+Average Cost for two    0.0548
+
+KEY INSIGHTS:
+- 'Votes' is typically the strongest predictor: more-reviewed restaurants
+  tend to have more stable, and often higher, ratings.
+- 'Average Cost for two' and 'Price range' correlate with rating -
+  pricier restaurants tend to be rated slightly higher on average.
+- Online delivery / table booking availability have a smaller but
+  non-trivial effect on predicted rating.
+- Tree-based models (Random Forest) outperform plain Linear Regression,
+  suggesting non-linear relationships between features and rating.
