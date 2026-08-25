@@ -1,0 +1,47 @@
+
+TASK 4: LOCATION-BASED ANALYSIS - KEY INSIGHTS
+=================================================
+
+DATA COVERAGE
+- 9551 total restaurants across 141 cities in
+  15 countries.
+- 9052 restaurants have valid (non-zero) coordinates and were used
+  for map visualizations; 499 had missing/placeholder
+  coordinates and were excluded from geo-plots (but retained in city stats).
+
+GEOGRAPHIC CONCENTRATION
+- Restaurant listings are heavily dominated by India: 5473
+  in New Delhi alone, the single largest city by count.
+- Top 3 cities by restaurant count: New Delhi, Gurgaon, Noida.
+- The top 10 cities account for 8052 of 9551
+  restaurants (84.3% of the dataset)
+  -> the data is geographically imbalanced, clustered around a handful of
+  major metro areas (largely NCR region in India: New Delhi, Noida, Gurgaon,
+  Faridabad, Ghaziabad).
+
+RATING PATTERNS BY LOCATION
+- Highest-rated city (min. 5 restaurants): London
+  (avg rating 4.54).
+- Lowest-rated city (min. 5 restaurants): Faridabad
+  (avg rating 3.1).
+- Cities outside India (e.g. those with smaller restaurant counts but strong
+  international dining scenes) tend to show higher average ratings than the
+  Indian metro average, suggesting either more selective listings or
+  different rating culture per region.
+
+CUISINE PATTERNS
+- North Indian and Chinese dominate as the most common cuisine in most major
+  Indian cities in the dataset.
+- Country-level cuisine preference varies significantly, reflecting local
+  dining culture.
+
+PRICING PATTERNS
+- 'Johannesburg' has the highest concentration of top-tier
+  (price range 4) restaurants among cities with a meaningful sample size.
+- Price range distribution varies noticeably by city - some cities skew
+  toward budget dining (price range 1-2), others toward premium (3-4).
+
+RECOMMENDATION
+- Given the geographic imbalance, any predictive model trained on this data
+  (see Task 1) should be validated separately on non-Indian cities to check
+  it generalizes rather than just fitting NCR-region patterns.
