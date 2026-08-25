@@ -1,0 +1,11 @@
+Restaurant Name,City,Cuisines,Average Cost for two,Price range,Aggregate rating,Votes,similarity
+Play Pizza,New Delhi,"Italian, Pizza",600,2,3.8,270,0.8006004502385099
+Fat Lulu's,New Delhi,"Pizza, Italian",1250,3,3.8,298,0.796215741583411
+Baking Bad,New Delhi,"Pizza, Italian",1000,3,3.8,697,0.7961724564907695
+Sbarro,New Delhi,"Pizza, Italian",600,2,3.5,1311,0.7854619777028747
+Tossin Pizza,New Delhi,"Pizza, Italian",900,2,4.1,647,0.7209189559449172
+Caffe Tonino,New Delhi,"Pizza, Italian, Cafe",1400,3,3.9,1503,0.7144761136892053
+NYC.PIE,New Delhi,"Italian, Pizza",900,2,3.8,306,0.7067202016380765
+Owl is Well,New Delhi,"Burger, American, Fast Food, Italian, Pizza",1000,3,4.5,162,0.6287749981373955
+Napoli Pizza,New Delhi,Pizza,800,2,4.0,41,0.6143585225876167
+Sinyora's,New Delhi,Italian,500,2,4.0,51,0.6142953465172545
