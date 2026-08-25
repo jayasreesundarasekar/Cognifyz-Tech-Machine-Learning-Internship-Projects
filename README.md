@@ -235,7 +235,7 @@ Together, these projects demonstrate an end-to-end application of Python, data a
 
 # License
 
-This project is distributed under the license included in the repository.
+This project is distributed under the MIT license included in the repository.
 
 ---
 
