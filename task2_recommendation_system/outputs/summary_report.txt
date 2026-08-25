@@ -1,0 +1,37 @@
+
+TASK 2: RESTAURANT RECOMMENDATION SYSTEM - SUMMARY
+=====================================================
+
+Approach: Content-based filtering using cosine similarity over a combined
+feature space of:
+  - Cuisine (multi-hot encoded, 143 unique cuisine tokens)
+  - Price range (normalized)
+  - Average cost for two (normalized)
+  - Aggregate rating (normalized, quality signal)
+  - Table booking / Online delivery availability
+
+Two recommendation modes implemented:
+  1. Preference-based: user specifies cuisines, price range, city, min rating
+     -> system builds an "ideal restaurant" vector and finds closest matches
+  2. Item-based: given a restaurant the user likes, find similar restaurants
+
+Dataset used: 6154 restaurants (after removing unrated & duplicate entries)
+
+
+RECOMMENDATION QUALITY CHECK
+-----------------------------
+Dataset average rating: 3.48
+Test 1 (Italian/Pizza) recommended avg rating: 3.92
+Test 2 (Chinese/Japanese) recommended avg rating: 4.40
+Test 1 average similarity score: 0.718
+Test 2 average similarity score: 0.831
+
+-> Recommended restaurants consistently score above the dataset average
+   rating, confirming the system successfully biases toward higher-quality
+   matches while respecting cuisine/price/location preferences.
+
+
+Sample results are saved in:
+  - test1_italian_pizza_delhi.csv
+  - test2_chinese_japanese_premium.csv
+  - test3_similar_restaurants.csv
