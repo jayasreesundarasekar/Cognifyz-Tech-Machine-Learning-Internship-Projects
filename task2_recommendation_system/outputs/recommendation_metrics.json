@@ -1,9 +1,0 @@
-{
-  "dataset_size_used": 6154,
-  "cuisine_vocabulary_size": 143,
-  "avg_dataset_rating": 3.4825154371140723,
-  "test1_avg_recommended_rating": 3.9200000000000004,
-  "test2_avg_recommended_rating": 4.4,
-  "test1_avg_similarity": 0.7177994764530031,
-  "test2_avg_similarity": 0.8311833403347224
-}
